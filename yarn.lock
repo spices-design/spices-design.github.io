@@ -850,6 +850,307 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@pepper/actions-button@^1.3.5":
+  version "1.3.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2factions-button/-/actions-button-1.3.5.tgz#a5ab4d85dcf09512b448f18011ec3b6762cdd207"
+  integrity sha512-nrUZYnMCq2tatTo+Sz8y8ZBZksqkhXDBjQ4g+UxqI4AML5/ynCFRzUevxNSATBRzTEH1uKZE/tJJj5pQEjpV8A==
+  dependencies:
+    "@pepper/ui-icon" "^1.0.7"
+    "@pepper/ui-loader" "^1.0.7"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/charts-stack@^1.1.2":
+  version "1.1.2"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fcharts-stack/-/charts-stack-1.1.2.tgz#3e433d2b62775f63ba6942db9e4644bbf9782d62"
+  integrity sha512-oHIHUL6CNSEkM6+fiZ/2Tg9Vp5S2ELKpebEcxm8V9dV1yQJfthZnYbLxa+TJSWqr7Rk/EKLlOjYkZTyc5G2LKA==
+
+"@pepper/data-badge@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdata-badge/-/data-badge-1.1.5.tgz#4b1e4f6c9e35a808dc204d9eaa33b982a92e7887"
+  integrity sha512-+5sCWv65Qy5L8Lb+i6v5eD9KT3FJCdi18jZA6sm9Hi7qov1IBJzaG0YKUOWd5s9aiQgkaX/ytIvmBVT1tXC96A==
+  dependencies:
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/data-empty@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdata-empty/-/data-empty-1.1.5.tgz#757bb4f384af3c462b38d402d058233db4185fcd"
+  integrity sha512-uOwALZHQVMwL5fj9RlW7EtBJzkfBvd/MgyzDI817WuI59cUGMCol7Ylm7ARQdL79sBR3v6Fqr6KCf9iP26UHqw==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+
+"@pepper/data-filter@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdata-filter/-/data-filter-1.1.5.tgz#38dff7053a03e6cee4795abd47332f14c87ae127"
+  integrity sha512-OTR1RjHAmqinHza/CM0JNBpN3UUXqSZL5BzIz266FDrkTof4MtinWY0CsJOVCYyL/jkAjK9JGaWnD3pzvIszhA==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/forms-select" "^1.4.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/data-pagination@^1.2.5":
+  version "1.2.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdata-pagination/-/data-pagination-1.2.5.tgz#fa7c2f427676c1e4c629d6c35e2f7b18f4329d42"
+  integrity sha512-yAvPHK9mqRuhYlInD88lVEtWbnDgt7ZdIsi4e0oNxeTjhf9e/RFOYNu1EkR+MV4LOeGj4f/8cpec9btyimqIMw==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/forms-select" "^1.4.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/data-table@^0.4.8":
+  version "0.4.8"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdata-table/-/data-table-0.4.8.tgz#66be8971453da193bf39d0452f7cb6e8f70b0d19"
+  integrity sha512-G7NW1SUGFJi1GauYgvoIgc47/TkhUS6ojFb8JH3q1rmPSTrN5rtFlGUJlRtmHmoyZkIjnlUhbXEO6kJbZAS2Fg==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/data-pagination" "^1.2.5"
+    "@pepper/forms-checkbox" "^1.5.5"
+    "@pepper/forms-input" "^1.6.6"
+    "@pepper/forms-select" "^1.4.5"
+    "@pepper/popins-dropdown" "^1.2.6"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/data-tag@^1.2.2":
+  version "1.2.2"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdata-tag/-/data-tag-1.2.2.tgz#82e8f7f386e05d97b73f9c2642d5731f5babcec6"
+  integrity sha512-BqKLiKbZ+dsCxNZGk3QgQ/lBrksQ5YGFnLdpmd6HhW+y+hJMKmu6qnj23z9/xJl73/OXD0enhZj+OLtbXDS8dg==
+
+"@pepper/directives-autofocus@^1.1.1":
+  version "1.1.1"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdirectives-autofocus/-/directives-autofocus-1.1.1.tgz#311ff5a9e92d492ba3aa4659ee334ffc0de4864f"
+  integrity sha512-yOThaAdimlHA4nTpQXvO9FiokW2srw2Nqmyx0FkhgZFM1P36JqpqySB8O87bqnjFRAiug6tMUC+H7+4L5EMH2A==
+
+"@pepper/directives-clickoutside@^1.1.1":
+  version "1.1.1"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fdirectives-clickoutside/-/directives-clickoutside-1.1.1.tgz#3e99953b5760a009c79b703599b74c3043bae678"
+  integrity sha512-/EBuoMpyX3t4Wha9mu+84cTl85FOwJ2tK0N+GSu7m5Qg5NRyGKKtWzgIPA4E2ZzxkMcEH0jSrV4Kmq1GNlc6mw==
+
+"@pepper/forms-autocomplete@^1.6.9":
+  version "1.6.9"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-autocomplete/-/forms-autocomplete-1.6.9.tgz#645f59e376bdc5566fe1b029d3bbfb209c555e67"
+  integrity sha512-Tz2VKgjxR1nwylFUDWkU+3UQRR/z7Zko0XuAwRF/RVtUaEsvhb8HqSlyFxaWgPwRDZweh5lutAio/AN5+lVh9Q==
+  dependencies:
+    "@pepper/directives-clickoutside" "^1.1.1"
+    "@pepper/forms-input" "^1.6.6"
+    "@pepper/popins-popin" "^1.2.6"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-checkbox@^1.5.5":
+  version "1.5.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-checkbox/-/forms-checkbox-1.5.5.tgz#2fc479cdb8c9aca8cf1d3c2cbc46442cb0ce9320"
+  integrity sha512-QM4NjTWwzUKDp0Hfsb6YdmpOzP8IbZfEjEC6em84NBwah5AyIZFNMId+aIJ848XqdkXEv3xk6Xbb6x5klGcU0g==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-choice@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-choice/-/forms-choice-1.1.5.tgz#2dd239687231efa55e4687b8ecfcae9e25ae7a71"
+  integrity sha512-j61dACTRdC4C9IyE5OdTTuqaz82EV7+t+nsc5A2Cv+fdQVz6ljj7JxTT152RmSGlifGyLR1TBJSZwhzZbIeuqw==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/forms-checkbox" "^1.5.5"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/forms-radio" "^1.3.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-file@^0.1.6":
+  version "0.1.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-file/-/forms-file-0.1.6.tgz#675ceef04ca6b58a389f607a6040082b06c96453"
+  integrity sha512-hNfUIalW2/c3aIT83II8mxvorqMn2GZNuCInc+tkTw2c5GZfhKJxftT36Jo4hkfxVgvl4v7iZkddw54H8mCIMA==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/forms-input" "^1.6.6"
+
+"@pepper/forms-input@^1.6.6":
+  version "1.6.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-input/-/forms-input-1.6.6.tgz#65d4ddc1cf47393e7fb86bb772e77ec946f3baf3"
+  integrity sha512-w9IxpyRcqExHuXoaY+9QiTVO2W3/RxMZx4ugKXi4m3oIjEHyU935Wyh5PKMU632EJIXUnK3QXiSEO+ZuoDU5Uw==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/ui-icon" "^1.0.7"
+    "@pepper/ui-loader" "^1.0.7"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-iterable@^1.1.9":
+  version "1.1.9"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-iterable/-/forms-iterable-1.1.9.tgz#5f1468b4c91ea87bbd58e312c36ec9dda21b88fe"
+  integrity sha512-9XApjDl7yhqfXO7G2Sk2N/WVd8VThCNk04WsCQG5Xobz6Tukcq9fUnaQPQ0wwBgQfvrgXx5DF7zIRaN5EAbD8g==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/forms-autocomplete" "^1.6.9"
+    "@pepper/forms-checkbox" "^1.5.5"
+    "@pepper/forms-input" "^1.6.6"
+    "@pepper/forms-select" "^1.4.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-label@^1.2.5":
+  version "1.2.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-label/-/forms-label-1.2.5.tgz#ab2dba9abb63f4a8c90b5c179ee864e0bcab738f"
+  integrity sha512-kCQpaSI5uNogbso4kIkqcCSAvYtWD4jvI/aVbGTO7+IUcbLbbuCTIBLyvjcs4oHxSQOZSh/qXTIo3DOV/DuriQ==
+  dependencies:
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-list@^0.1.10":
+  version "0.1.10"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-list/-/forms-list-0.1.10.tgz#bd45c8ff06fa9e230b0919bbaa23e9d4d304bc22"
+  integrity sha512-cKVAgbDuYVFEKY4XuovNe4m4dDgSMkoPZUfBnPxLFhGtGIygtjAJ/s/RfzwXYkWfeYy/CDsnQjfe5uHcSZeN0A==
+  dependencies:
+    sortablejs "^1.10.2"
+
+"@pepper/forms-radio@^1.3.5":
+  version "1.3.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-radio/-/forms-radio-1.3.5.tgz#1ec05bdca15b7a2a7967cf0c8440e261241cca57"
+  integrity sha512-S/MAxF5pFb0WU0Iq3i7fyx8UcqeTcKWO5EjvUMx2KISb+wS1302el3Ja284MiXVkP6nYQVaqCphbaZeVw4Pwzw==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/forms-select@^1.4.5":
+  version "1.4.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-select/-/forms-select-1.4.5.tgz#cf95c991a60e75013405060161fe176ecff2e78a"
+  integrity sha512-lx98AqIDHcKUbx0u/eO9abUastVeuq6ywxuaFZOTDs/VeIJTp2qc5hqp0SK335h3fp/eHaWv4L11xSb2Od0NfQ==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/directives-clickoutside" "^1.1.1"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/ui-icon" "^1.0.7"
+    "@pepper/ui-loader" "^1.0.7"
+
+"@pepper/forms-textarea@^1.1.6":
+  version "1.1.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fforms-textarea/-/forms-textarea-1.1.6.tgz#3389ebfb44d9a0668f5e0fc15f16eecf030dd7f1"
+  integrity sha512-hA4df+f9ySqDYbZj7M/sI0bPryNSxqTj6O9KkjcQGjxBJ8337E+cn4DlV64NprrXG9mg7zMmJMwABZDCRr7mkQ==
+  dependencies:
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/ui-icon" "^1.0.7"
+    "@pepper/ui-loader" "^1.0.7"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/navigations-tabs@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fnavigations-tabs/-/navigations-tabs-1.1.5.tgz#9ddee28c2fdba1bd760d83f1823c0d6d891deabc"
+  integrity sha512-2q9eLF3CunFPPGndwXof2B53P5Oxad4d9PMVgOJYjY4y+23zfBRw+hSVzolqS4k+9LSC/vkAoKNzMiEtkZ8xgA==
+  dependencies:
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/pepper@^1.10.14":
+  version "1.10.14"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpepper/-/pepper-1.10.14.tgz#fd7c5abecb6ae1409790c8e78ad1383bf4aa2d7b"
+  integrity sha512-/Bb1MP69f1+KcBBm6wUxUCGGQZ5TIZ3WDjG2XScOMBo8nnHjwYv4L6kl48KekkagM262UNemHhq2DFrlFjuxKA==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/charts-stack" "^1.1.2"
+    "@pepper/data-badge" "^1.1.5"
+    "@pepper/data-empty" "^1.1.5"
+    "@pepper/data-filter" "^1.1.5"
+    "@pepper/data-pagination" "^1.2.5"
+    "@pepper/data-table" "^0.4.8"
+    "@pepper/data-tag" "^1.2.2"
+    "@pepper/directives-autofocus" "^1.1.1"
+    "@pepper/directives-clickoutside" "^1.1.1"
+    "@pepper/forms-autocomplete" "^1.6.9"
+    "@pepper/forms-checkbox" "^1.5.5"
+    "@pepper/forms-choice" "^1.1.5"
+    "@pepper/forms-file" "^0.1.6"
+    "@pepper/forms-input" "^1.6.6"
+    "@pepper/forms-iterable" "^1.1.9"
+    "@pepper/forms-label" "^1.2.5"
+    "@pepper/forms-list" "^0.1.10"
+    "@pepper/forms-radio" "^1.3.5"
+    "@pepper/forms-select" "^1.4.5"
+    "@pepper/forms-textarea" "^1.1.6"
+    "@pepper/navigations-tabs" "^1.1.5"
+    "@pepper/popins-blanket" "^1.2.6"
+    "@pepper/popins-confirm" "^1.2.6"
+    "@pepper/popins-modal" "^1.1.6"
+    "@pepper/popins-notification" "^1.1.5"
+    "@pepper/popins-popin" "^1.2.6"
+    "@pepper/transitions-fade" "^1.1.5"
+    "@pepper/transitions-none" "^1.0.7"
+    "@pepper/ui-icon" "^1.0.7"
+    "@pepper/ui-loader" "^1.0.7"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/popins-blanket@^1.2.6":
+  version "1.2.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpopins-blanket/-/popins-blanket-1.2.6.tgz#089c3ac2fe3c4b7ad1b1a76247a92c85cff9e357"
+  integrity sha512-2vTueqaIs5DOv6/nFGGMAAF/L4GghTN6DdRXWBwzYTr7Mc5hzAYhGkw6Vnb0wBCButqfins1TYhU6UZzBG4U0w==
+  dependencies:
+    "@pepper/popins-popin" "^1.2.6"
+
+"@pepper/popins-confirm@^1.2.6":
+  version "1.2.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpopins-confirm/-/popins-confirm-1.2.6.tgz#ed11995e7c413467bc642a83fbb3f017c4f559d0"
+  integrity sha512-bEnK46XwWfW4jfrQI9ZGAI913OV+Yc1S/S0ELpaUoEyPYnDT7aMHILehx/1VdVyJU7Bxf2W/vWkiMfx708nGAQ==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/popins-blanket" "^1.2.6"
+    "@pepper/popins-popin" "^1.2.6"
+
+"@pepper/popins-dropdown@^1.2.6":
+  version "1.2.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpopins-dropdown/-/popins-dropdown-1.2.6.tgz#db3ff130c979db4114911956b3fc6288c4506606"
+  integrity sha512-a0rHFZoldRKTt9T5A/odsMAl7HSt3d5DEyGT1gbh3nB6YaWv400ACZDvlJVVqgL7oKQO+PdZd9Bf9vB4ADNbNA==
+  dependencies:
+    "@pepper/popins-popin" "^1.2.6"
+    "@pepper/transitions-fade" "^1.1.5"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/popins-modal@^1.1.6":
+  version "1.1.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpopins-modal/-/popins-modal-1.1.6.tgz#03c76c81518fc81342c1f008a6a7bad737e1f0e4"
+  integrity sha512-8CjwWhaph36Vvuopj5BIP4LJ0E2MJ8KtyDmHwFjglT9wgmvtNbnkYuWS/K8QD6YH/0a/eOLkklPmLAl/1956mg==
+  dependencies:
+    "@pepper/actions-button" "^1.3.5"
+    "@pepper/popins-blanket" "^1.2.6"
+    "@pepper/popins-popin" "^1.2.6"
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/popins-notification@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpopins-notification/-/popins-notification-1.1.5.tgz#de86714f7f21108d521f77f222a2bfb84721dfb4"
+  integrity sha512-5J3g2sqkGfyRRsEveSnv8iPHFzP21hyoDdUmqM52htFcapX7V/NdCiW2DfzAvaim1mAT14ry37f+kPme1mXymw==
+  dependencies:
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/popins-popin@^1.2.6":
+  version "1.2.6"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fpopins-popin/-/popins-popin-1.2.6.tgz#58418b62af87e956a6e13572b9fdcff9f4574c85"
+  integrity sha512-mF2lJMa4ec88Fh4ALhmwRzoNQW54QO8NIoKjS+npK2Jc3cLtMleWRZFVJQ0gxsli2gepYc4gfVdR5gp1Bk4hLA==
+  dependencies:
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/transitions-fade@^1.1.5":
+  version "1.1.5"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2ftransitions-fade/-/transitions-fade-1.1.5.tgz#8e8e617f2f1fb8fb2fadd9a63f5bf78ec8ab2d6d"
+  integrity sha512-MuR2l3APRsGKmpNFCkj/RVMdJKBQTiBhcd991Zt5imKQ/uBJhuHgWJyY9ouMPA3cKxnWFDzfpMczw5RCasSbUA==
+  dependencies:
+    "@pepper/utils" "^1.0.2"
+
+"@pepper/transitions-none@^1.0.7":
+  version "1.0.7"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2ftransitions-none/-/transitions-none-1.0.7.tgz#ae90ed6dfd959197682a5466ff8a1f5e836f14f5"
+  integrity sha512-ZA4ZJfvoMA4kbdbHaWFmRm75z9wyUiTO1rsIJsk8CXSXf7RgRJf9iiJObcxJ05BIpdV8IyP1H6L5dEv7XBKdRw==
+
+"@pepper/ui-icon@^1.0.7":
+  version "1.0.7"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fui-icon/-/ui-icon-1.0.7.tgz#f5ff7763472f8a180e85322c9d27a07be1793e3f"
+  integrity sha512-VUGVy78TlliLp2rMV4nYDqYfZKrubYUqUcM2FFOmXTM8zBkURaSNqMHG5phegOCRoabQyRi9yV9EZpkFoaPRjQ==
+
+"@pepper/ui-loader@^1.0.7":
+  version "1.0.7"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fui-loader/-/ui-loader-1.0.7.tgz#23feb44152b9d9b6fdb0f554b57afed63f2f35fa"
+  integrity sha512-WedqLRDTv1XC6TQTLTKjgwRjC2oYKuZdPMfbNFnZT82dUz8TqgteRou0chY34jk9Uh5RIqCbNuCi95u834fVqw==
+
+"@pepper/utils@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2futils/-/utils-1.0.2.tgz#3fd48d846c282b375fc78c65061610c87225823c"
+  integrity sha512-r1EFQBXu1o2LamYohtwDW35um+Cm6sCqz4vSyyq1VkaVQwsXVe3orbxsWRoToo4YBrcIIUMCei6HobV+w32WNw==
+
 "@soda/friendly-errors-webpack-plugin@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@soda/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.7.1.tgz#706f64bcb4a8b9642b48ae3ace444c70334d615d"
@@ -6603,6 +6904,11 @@ sort-keys@^1.0.0:
   integrity sha1-RBttTTRnmPG05J6JIK37oOVD+a0=
   dependencies:
     is-plain-obj "^1.0.0"
+
+sortablejs@^1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/sortablejs/-/sortablejs-1.10.2.tgz#6e40364d913f98b85a14f6678f92b5c1221f5290"
+  integrity sha512-YkPGufevysvfwn5rfdlGyrGjt7/CRHwvRPogD/lC+TnvcN29jDpCifKP+rBqf+LRldfXSTh+0CGLcSg0VIxq3A==
 
 source-list-map@^2.0.0:
   version "2.0.1"
