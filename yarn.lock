@@ -1124,6 +1124,18 @@
   dependencies:
     "@pepper/utils" "^1.0.2"
 
+"@pepper/themes-abc@^1.7.1":
+  version "1.7.1"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fthemes-abc/-/themes-abc-1.7.1.tgz#e259846c2256c0c1c63785061d176168374649a6"
+  integrity sha512-8yYf3jhQELYmdMmmMtyHMkN19qA6u9gWsOlP39M/Us2ZfmaXnvlN14V89zTFjJ+xmMZEstWqiTYv67DrSMYcSw==
+
+"@pepper/themes-spices@^1.7.0":
+  version "1.0.1"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fthemes-spices/-/themes-spices-1.0.1.tgz#1e9fc8e4a50d45acd8df59519b839f717f2f9931"
+  integrity sha512-96V+piMlnTy40ICKoWGJ+JHG+sTcPsrVullbBtv3aQwfv0MSStr4JLel4zpyohuzI09mEwOYoy0DdL8kakObgg==
+  dependencies:
+    "@pepper/themes-abc" "^1.7.1"
+
 "@pepper/transitions-fade@^1.1.5":
   version "1.1.5"
   resolved "https://npm.infinity-commerce.io:443/@pepper%2ftransitions-fade/-/transitions-fade-1.1.5.tgz#8e8e617f2f1fb8fb2fadd9a63f5bf78ec8ab2d6d"

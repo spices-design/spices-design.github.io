@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve",
+    "start": "vue-cli-service serve --hot --host 0.0.0.0 --public spices.local",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "@pepper/pepper": "^1.10.14",
+    "@pepper/themes-spices": "^1.7.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
