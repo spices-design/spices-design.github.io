@@ -53,28 +53,28 @@ export default {
       ],
 
       blue: {
-        light: ['blue00', 'blue10', 'blue20', 'blue30', 'blue40', 'blue50'],
-        dark:  ['blue60', 'blue70', 'blue80', 'blue90']
+        light: ['blue00', 'blue10', 'blue20', 'blue30', 'blue40'],
+        dark:  ['blue50', 'blue60', 'blue70']
       },
       red: {
-        light: ['red00', 'red10', 'red20', 'red30', 'red40', 'red50'],
-        dark:  ['red60', 'red70', 'red80', 'red90']
+        light: ['red00', 'red10', 'red20', 'red30', 'red40'],
+        dark:  ['red50', 'red60', 'red70']
       },
       yellow: {
-        light: ['yellow00', 'yellow10', 'yellow20', 'yellow30', 'yellow40', 'yellow50'],
-        dark:  ['yellow60', 'yellow70', 'yellow80', 'yellow90']
+        light: ['yellow00', 'yellow10', 'yellow20', 'yellow30', 'yellow40'],
+        dark:  ['yellow50', 'yellow60']
       },
       orange: {
-        light: ['orange00', 'orange10', 'orange20', 'orange30', 'orange40', 'orange50'],
-        dark:  ['orange60', 'orange70', 'orange80', 'orange90']
+        light: ['orange00', 'orange10', 'orange20', 'orange30', 'orange40'],
+        dark:  ['orange50', 'orange60']
       },
       green: {
-        light: ['green00', 'green10', 'green20', 'green30', 'green40', 'green50'],
-        dark:  ['green60', 'green70', 'green80', 'green90']
+        light: ['green00', 'green10', 'green20', 'green30', 'green40'],
+        dark:  ['green50', 'green60', 'green70']
       },
       teal: {
-        light: ['teal00', 'teal10', 'teal20', 'teal30', 'teal40', 'teal50'],
-        dark:  ['teal60', 'teal70', 'teal80', 'teal90']
+        light: ['teal00', 'teal10', 'teal20', 'teal30', 'teal40'],
+        dark:  ['teal50', 'teal60', 'teal70']
       },
 
     }
@@ -113,7 +113,7 @@ export default {
       }
       else
       {
-        child.classList.add('-transitionin');
+        // child.classList.add('-transitionin');
         this.displayed.push(child);
       }
 
