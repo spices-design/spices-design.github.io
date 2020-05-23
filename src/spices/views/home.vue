@@ -4,33 +4,37 @@
     <nav-header />
 
     <!-- Hero -->
-
+    <hero />
 
     <!-- Modules -->
-    <div class="modules">
-      <nav-module 
-        v-for="m in modules"
-        :description="m.description"
-        :href="m.href"
-        :key="m.title"
-        :illustration="m.illustration"
-        :title="m.title"
-        :version="m.version"
-        />
+    <div class="container modules">
+      <div class="grid">
+        <card 
+          v-for="m in modules"
+          :description="m.description"
+          :href="m.href"
+          :key="m.title"
+          :illustration="m.illustration"
+          :title="m.title"
+          :version="m.version"
+          />
+      </div>
     </div>
   </main>
 </template>
 
 <script>
 import NavHeader from '@/spices/components/header'
-import NavModule from '@/spices/components/module'
+import Card from '@/spices/components/card'
+import Hero from '@/spices/components/hero'
 
 export default {
   name: 'SpicesHome',
 
   components: {
+    Card,
+    Hero,
     NavHeader,
-    NavModule
   },
 
   data(){

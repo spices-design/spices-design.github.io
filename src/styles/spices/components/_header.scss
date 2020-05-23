@@ -1,0 +1,51 @@
+.header{
+  $root: '.header';
+
+  .container{
+    @include b-flex;
+    @include b-flex(between);
+    @include b-flex(middle);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	First
+  //
+  ////////////////////////////////////////////////////
+  #{$root}__first{
+    @include b-flex;
+    @include b-flex(middle);
+
+    text-decoration: none;
+  }
+  
+  #{$root}__logotype{
+    @include ml(s);
+
+    @include f(xxxl);
+    @include f(blue80);
+    @include f(medium);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Second
+  //
+  ////////////////////////////////////////////////////
+
+  #{$root}__second{
+    & > * + * {
+      @include ml(m);
+    }
+  }
+
+  #{$root}__cta{
+    border: 0;
+    background: 0;
+
+    @include f(m);
+    @include f(medium);
+    @include f(light60);
+    text-decoration: none;
+  }
+}

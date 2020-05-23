@@ -1,0 +1,93 @@
+.card{
+  $root: '.card';
+
+  @include b-block;
+
+  text-decoration: none;
+  @include f(light90);
+
+  ////////////////////////////////////////////////////
+  //
+  //	Header
+  //
+  ////////////////////////////////////////////////////
+  #{$root}__header{
+    @include b-flex;
+    @include b-flex(middle);
+    @include b-flex(center);
+
+    border: 2px solid $light20;
+    @include bg(blue00);
+    border-radius: 4px;
+
+    height: 0;
+    padding-top: 56.25%;
+    @include b-relative;
+
+    @include td(s);
+  }
+
+  #{$root}__illustration{
+    object-fit: contain;
+    height: 80%;
+    width: 80%;
+
+    @include b-absolute;
+    top: 10%;
+    left: 10%;
+  } 
+
+  ////////////////////////////////////////////////////
+  //
+  //	Body
+  //
+  ////////////////////////////////////////////////////
+
+  #{$root}__body{
+    @include mt(m);
+    width: 80%;
+    max-width: 20rem;
+  }
+
+  #{$root}__group{
+    @include b-flex;
+    @include b-flex(baseline);
+  }
+
+  #{$root}__title{
+    @include f(medium);
+    @include f(l);
+  }
+
+  #{$root}__version{
+    @include ml(xs);
+    @include p(xs);
+    @include shadow(l);
+    @include bg(light10);
+    border-radius: 2px;
+
+    @include f(light50);
+  }
+
+  #{$root}__description{
+    @include body1;
+    @include f(light60);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Interactive
+  //
+  ////////////////////////////////////////////////////
+
+  &:hover,
+  &:focus{
+    #{$root}__header{
+      @include bc(blue50);
+    }
+
+    #{$root}__title{
+      @include f(blue50);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueBodyClass from 'vue-body-class'
 
 import PepperRoutes from '@/pepper/routes'
 import SpicesRoutes from '@/spices/routes'
@@ -31,6 +32,11 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: domainRoutes
-})
+});
 
 export default router
+
+//////////////////////////////////////////////////////////////////
+
+const vbc = new VueBodyClass(domainRoutes);
+router.beforeEach((to, from, next) => { vbc.guard(to, next) });

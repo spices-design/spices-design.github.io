@@ -1129,10 +1129,10 @@
   resolved "https://npm.infinity-commerce.io:443/@pepper%2fthemes-abc/-/themes-abc-1.7.1.tgz#e259846c2256c0c1c63785061d176168374649a6"
   integrity sha512-8yYf3jhQELYmdMmmMtyHMkN19qA6u9gWsOlP39M/Us2ZfmaXnvlN14V89zTFjJ+xmMZEstWqiTYv67DrSMYcSw==
 
-"@pepper/themes-spices@^1.7.0":
-  version "1.0.1"
-  resolved "https://npm.infinity-commerce.io:443/@pepper%2fthemes-spices/-/themes-spices-1.0.1.tgz#1e9fc8e4a50d45acd8df59519b839f717f2f9931"
-  integrity sha512-96V+piMlnTy40ICKoWGJ+JHG+sTcPsrVullbBtv3aQwfv0MSStr4JLel4zpyohuzI09mEwOYoy0DdL8kakObgg==
+"@pepper/themes-spices@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.infinity-commerce.io:443/@pepper%2fthemes-spices/-/themes-spices-1.0.2.tgz#2bccf9690155321bad98b65611c77167d21c7be7"
+  integrity sha512-U8UMvPtPnGZymkI6uWKIAij2W7rHLI0n5AIncCBsJRRyWXgv9JeQowjlC3jtLwYKdBB9DlEo7pdVULJShs150w==
   dependencies:
     "@pepper/themes-abc" "^1.7.1"
 
@@ -7713,6 +7713,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+vue-body-class@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/vue-body-class/-/vue-body-class-3.0.2.tgz#5a581b82f247642a34454b2e3e3e1191c2f55070"
+  integrity sha512-IeoB46l+lNG2u3sS61TBGh6OBsG//ucmkj5YOqKnOQUMpD1yBHqlNZ8Rkhzr0jck2xSuRAdm5imSt9ZIe8i0Mg==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

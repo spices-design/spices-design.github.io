@@ -1,0 +1,58 @@
+.hero{
+  $root: '.hero';
+
+  @include b-relative;
+
+  ////////////////////////////////////////////////////
+  //
+  //	bg
+  //
+  ////////////////////////////////////////////////////
+
+  &::before{
+    content: '';
+
+    @include b-absolute;
+    @include t(0);
+    @include l(0);
+    @include z(1);
+
+    width: calc(100% - (100% / 14));
+    height: 100%;
+
+    @include bg(blue90);
+  }
+
+  .container{
+    @include b-relative;
+    @include z(2);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Content
+  //
+  ////////////////////////////////////////////////////
+
+  #{$root}__content{
+    @include py(xxl);
+
+    @include f(white);
+
+    @include media('>m'){
+      width: calc(100% / 12 * 6);
+    }
+
+    @include media('>l'){
+      width: calc(100% / 12 * 5);
+    }
+  }
+
+  #{$root}__title{
+    @include heading1;
+  }
+
+  #{$root}__description{
+    @include body1;
+  }
+}

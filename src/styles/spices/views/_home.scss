@@ -1,0 +1,59 @@
+.view-spices-home {
+
+  main{
+    &::before,
+    &::after{
+      content: '';
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      height: 4px;
+    }
+
+    &::before{
+      width: calc(100% / 14 * 8);
+      background: color(primary70);
+    }
+    
+    &::after{
+      width: calc(100% / 14 * 6);
+      background: color(primary50);
+    }
+  }
+
+  #app{
+    position: relative;
+
+    &::before{
+      content: '';
+      
+      display: block;
+      background: color(light10);
+
+      width: calc(100% / 14 * 6);
+      height: 80%;
+      left: calc(100% / 14 * 8);
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .header{
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0;
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Modules
+  //
+  ////////////////////////////////////////////////////
+
+  .modules{
+    @include mt(xxl);
+  }  
+}
