@@ -39,6 +39,10 @@
 
     @include f(white);
 
+    & > * + * {
+      @include mt(m);
+    }
+
     @include media('>m'){
       width: calc(100% / 12 * 6);
     }
@@ -46,6 +50,7 @@
     @include media('>l'){
       width: calc(100% / 12 * 5);
     }
+    
   }
 
   #{$root}__title{
@@ -54,5 +59,6 @@
 
   #{$root}__description{
     @include body1;
+    opacity: .6;
   }
 }

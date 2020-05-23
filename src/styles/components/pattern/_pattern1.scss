@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////
+//
+//           Pattern 1 :: Hamburger
+//
+////////////////////////////////////////////////////
+.p1
+{
+  @include bgattr('first');
+  @include bgattr('second', '&::before, &::after');
+
+  &::before,
+  &::after
+  {
+    content: attr(dark);
+
+    display: block;
+    width: $width;
+    height: #{$width / 3};
+
+    position: absolute;
+
+    transform-origin: top;
+  }
+
+  &::before
+  {
+    top: 0;
+    left: 0;
+
+    transform-origin: top;
+  }
+
+  &::after
+  {
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom;
+  }
+
+  &.-animate
+  {
+    &::before,
+    &::after
+    {
+      animation: p1 $timing infinite;
+    }
+  }
+}
+
+@keyframes p1
+{
+  0%
+  {
+    transform: scaleY(0);
+  }
+
+  50%
+  {
+    transform: scaleY(1);
+  }
+
+  100%
+  {
+    transform: scaleY(0);
+  }
+}

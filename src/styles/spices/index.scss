@@ -1,0 +1,10 @@
+@import "~@pepper/themes-spices/src/theme.scss";
+
+@import "../layouts/base";
+
+@import "../components/pattern/_grid";
+@import "./components/card";
+@import "./components/header";
+@import "./components/hero";
+
+@import "./views/home";

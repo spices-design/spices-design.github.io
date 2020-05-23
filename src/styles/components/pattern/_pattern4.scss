@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////
+//
+//           Pattern 4 :: Strike
+//
+////////////////////////////////////////////////////
+.p4
+{
+  @include bgattr('first');
+  @include bgattr('second', '&::before');
+
+  &::before
+  {
+    content: attr(dark);
+
+    display: block;
+    width: $width;
+    height: #{$width / 3};
+
+    position: absolute;
+    top: #{$width / 3};
+    left: 0;
+
+    transform-origin: center;
+  }
+
+  &.-animate
+  {
+    &::before
+    {
+      animation: p4 $timing infinite;
+    }
+  }
+}
+
+@keyframes p4
+{
+  0%
+  {
+    transform: translateX(-#{$width});
+  }
+
+  25%
+  {
+    transform: translatex(0);
+  }
+
+  50%
+  {
+    transform: translatex(0);
+  }
+
+  75%
+  {
+    transform: rotate(90deg);
+  }
+
+  100%
+  {
+    transform: translateY(-#{$width}) rotate(90deg);
+  }
+}

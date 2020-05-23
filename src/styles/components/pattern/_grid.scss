@@ -1,0 +1,146 @@
+.pattern-grid
+{
+  $root: '.pattern-grid';
+  $timing: 10s;
+  $width: 64px;
+
+  pointer-events: none;
+
+  @mixin bgattr($attr, $selector:null)
+  {
+    @each $key, $color in $c-colors
+    {
+      &[#{$attr}="#{'' + $key}"]
+      {
+        @if $selector
+        {
+          #{$selector}
+          {
+            background: $color;
+          }
+        }
+        @else
+        {
+          background: $color;
+        }
+      }
+    }
+  }
+
+  .invisible
+  {
+    visibility: hidden;
+  }
+
+  #{$root}__row
+  {
+    @include b-flex;
+    @include b-flex(bottom);
+    @include ml(auto);
+    margin-right: calc(100% / 14);
+    max-width: 40rem;
+
+    @include media('<s')
+    {
+      &:nth-child(1)
+      {
+        visibility: hidden;
+      }
+      &:nth-child(7),
+      &:nth-child(8)
+      {
+        display: none;
+      }
+    }
+  }
+
+  #{$root}__item
+  {
+    display: inline-block;
+    width: $width;
+    height: $width;
+    overflow: hidden;
+
+    position: relative;
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: opacity .5s, transform .5s;
+
+    $i: 10;
+    @while $i > 0
+    {
+      $stag: 50 * $i;
+      &:nth-child(#{$i})
+      {
+        transition-delay: #{$stag}ms;
+        animation-delay: #{$stag}ms;
+        &::before,
+        &::after
+        {
+          transition-delay: #{$stag}ms;
+          animation-delay: #{$stag}ms;
+        }
+
+        @include media('<l')
+        {
+          @if ($i % 4) == 0
+          {
+            display: none;
+          }
+        }
+
+        @include media('<m')
+        {
+          @if ($i % 2) == 0
+          {
+            display: none;
+          }
+        }
+
+        @include media('<s')
+        {
+          @if ($i == 1)
+          {
+            display: none;
+          }
+        }
+      }
+      $i: $i - 1;
+    }
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Patterns
+  //
+  ////////////////////////////////////////////////////
+
+  @import './pattern1';
+  @import './pattern2';
+  @import './pattern3';
+  @import './pattern4';
+
+  ////////////////////////////////////////////////////
+  //
+  //  Appearance
+  //
+  ////////////////////////////////////////////////////
+
+  .-transitionin
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @keyframes transitionin
+  {
+    0%
+    {
+      transform: translateX(-100%);
+    }
+    100%
+    {
+      transform: translateX(0);
+    }
+  }
+}

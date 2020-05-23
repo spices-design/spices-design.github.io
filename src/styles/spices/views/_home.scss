@@ -47,6 +47,16 @@
     padding: 2rem 0;
   }
 
+  .pattern-grid{
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    z-index: 1;
+    
+    width: 100%;
+    height: 100%;
+  }
+
   ////////////////////////////////////////////////////
   //
   //	Modules
@@ -54,6 +64,6 @@
   ////////////////////////////////////////////////////
 
   .modules{
-    @include mt(xxl);
+    margin-top: 4rem;
   }  
 }

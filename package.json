@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve --hot --host 0.0.0.0 --public spices.local",
+    "start": "vue-cli-service serve --hot --host 0.0.0.0",
     "build": "vue-cli-service build"
   },
   "dependencies": {

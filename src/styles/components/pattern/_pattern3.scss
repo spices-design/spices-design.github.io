@@ -1,0 +1,87 @@
+////////////////////////////////////////////////////
+//
+//           Pattern 3 :: Tile
+//
+////////////////////////////////////////////////////
+.p3
+{
+  @include bgattr('first');
+  @include bgattr('second', '&::before, &::after');
+
+  &::before,
+  &::after
+  {
+    content: '';
+
+    display: block;
+    width: #{$width / 2};
+    height: #{$width / 2};
+
+    position: absolute;
+    z-index: 1;
+
+  }
+
+  &::before
+  {
+    top: 0;
+    left: 0;
+  }
+  &::after
+  {
+    bottom: 0;
+    right: 0;
+
+  }
+
+  &.-animate
+  {
+    &::before
+    {
+      animation: p3-first $timing linear infinite;
+    }
+    &::after
+    {
+      animation: p3-second $timing linear infinite;
+    }
+  }
+}
+
+@keyframes p3-first
+{
+  0%
+  {
+    transform: translateX(-#{$width});
+  }
+  25%
+  {
+    transform: translateX(0);
+  }
+  75%
+  {
+    transform: translateX(0);
+  }
+  100%
+  {
+    transform: translateY(-#{$width});
+  }
+}
+@keyframes p3-second
+{
+  0%
+  {
+    transform: translateX(#{$width});
+  }
+  25%
+  {
+    transform: translateX(0);
+  }
+  75%
+  {
+    transform: translateX(0);
+  }
+  100%
+  {
+    transform: translateY(#{$width});
+  }
+}

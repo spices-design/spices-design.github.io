@@ -1,0 +1,91 @@
+////////////////////////////////////////////////////
+//
+//           Pattern 2 :: Squared
+//
+////////////////////////////////////////////////////
+.p2
+{
+  @include bgattr('first');
+  @include bgattr('second', '&::before');
+  @include bgattr('first', '&::after');
+
+  &::before,
+  &::after
+  {
+    content: '';
+
+    display: block;
+    width: #{$width};
+    height: #{$width};
+
+    position: absolute;
+
+    transform-origin: 50% 50%;
+
+    top: 0;
+    left: 0;
+  }
+
+  &::before
+  {
+    z-index: 1;
+  }
+
+  &::after
+  {
+    z-index: 2;
+  }
+
+  &.-animate
+  {
+    &::before
+    {
+      animation: p2-first $timing linear infinite;
+    }
+    &::after
+    {
+      animation: p2-second $timing linear infinite;
+    }
+  }
+}
+
+@keyframes p2-first
+{
+  0%
+  {
+    transform: scale(0);
+  }
+
+  50%
+  {
+    transform: scale(1);
+  }
+
+  99%
+  {
+    transform: scale(1);
+  }
+
+  100%
+  {
+    transform: scale(0);
+  }
+}
+
+@keyframes p2-second
+{
+  0%
+  {
+    transform: scale(0);
+  }
+
+  50%
+  {
+    transform: scale(0);
+  }
+
+  100%
+  {
+    transform: scale(1);
+  }
+}
