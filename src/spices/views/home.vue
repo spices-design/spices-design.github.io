@@ -1,5 +1,8 @@
 <template>
   <main>
+    <!-- TopBar -->
+    <top-bar />
+
     <!-- header -->
     <nav-header />
 
@@ -28,6 +31,7 @@
 </template>
 
 <script>
+import TopBar from '@/components/topbar'
 import Card from '@/spices/components/card'
 import Hero from '@/spices/components/hero'
 import NavFooter from '@/spices/components/footer'
@@ -41,6 +45,7 @@ export default {
     Hero,
     NavFooter,
     NavHeader,
+    TopBar
   },
 
   data(){

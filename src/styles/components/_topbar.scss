@@ -1,0 +1,90 @@
+.topbar{
+  @include b-fixed;
+  @include t(0);
+  @include l(0);
+  @include width(100);
+  height: 4px;
+
+  &::before,
+  &::after{
+    content: '';
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    display: block;
+    height: 4px;
+  }
+  
+  &::before{
+    width: calc(100% / 14 * 13);
+    border-radius: 4px;
+  }
+  
+  &::after{
+    width: calc(100% / 14 * 8);
+  }
+  
+  ////////////////////////////////////////////////////
+  //
+  //	Colors
+  //
+  ////////////////////////////////////////////////////
+  &.-red{
+    &::before{
+      background: color(red70);
+    }
+    &::after{
+      background: color(red50);
+    }
+  }
+  
+  &.-orange{
+    &::before{
+      background: color(orange70);
+    }
+    &::after{
+      background: color(orange50);
+    }
+  }
+  
+  &.-yellow{
+    &::before{
+      background: color(yellow70);
+    }
+    &::after{
+      background: color(yellow50);
+    }
+  }
+  
+  &.-green{
+    &::before{
+      background: color(green70);
+    }
+    &::after{
+      background: color(green50);
+    }
+  }
+
+  &.-teal{
+    &::before{
+      background: color(teal70);
+    }
+    &::after{
+      background: color(teal50);
+    }
+  }
+  
+  &.-blue{
+    &::before{
+      background: color(blue70);
+    }
+    &::after{
+      background: color(blue50);
+    }
+  }
+
+  
+  
+}

@@ -2,8 +2,17 @@
 
 @import "../layouts/base";
 
+
+////////////////////////////////////////////////////
+//
+//	Components
+//
+////////////////////////////////////////////////////
+
 @import "../components/footer";
 @import "../components/pattern/grid";
+@import "../components/topbar";
+
 @import "./components/card";
 @import "./components/header";
 @import "./components/hero";
