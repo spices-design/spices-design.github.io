@@ -133,7 +133,7 @@ export default {
       child.classList.add('p'+p);
       
       // Animation
-      child.classList.add('-animate');
+      // child.classList.add('-animate');
       child.classList.add('-transitionin');
     }
   },
