@@ -1,0 +1,20 @@
+.footer{
+  $root: '.footer';
+
+  border-top: 1px solid $light20;
+  @include body2;
+  @include f(light50);
+
+  #{$root}__body{
+    @include py(xl);
+  }
+
+  #{$root}__copyright{
+    max-width: 25rem;
+  }
+
+  #{$root}__footer{
+    @include py(s);
+    @include bg(light10);
+  }
+}

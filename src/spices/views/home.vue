@@ -11,6 +11,7 @@
       <div class="grid">
         <card 
           v-for="m in modules"
+          :cta="m.cta"
           :description="m.description"
           :href="m.href"
           :key="m.title"
@@ -20,13 +21,17 @@
           />
       </div>
     </div>
+
+    <!-- Footer -->
+    <nav-footer />
   </main>
 </template>
 
 <script>
-import NavHeader from '@/spices/components/header'
 import Card from '@/spices/components/card'
 import Hero from '@/spices/components/hero'
+import NavFooter from '@/spices/components/footer'
+import NavHeader from '@/spices/components/header'
 
 export default {
   name: 'SpicesHome',
@@ -34,6 +39,7 @@ export default {
   components: {
     Card,
     Hero,
+    NavFooter,
     NavHeader,
   },
 
@@ -45,14 +51,16 @@ export default {
           description: 'A design token specification and toolset to enforce consistency in your application with flexibility at heart.',
           version: '3.1.18',
           illustration: '/statics/images/logo/salt.svg',
-          href: 'https://salt.spices.design'
+          href: 'https://salt.spices.design',
+          cta: 'Get Salty!'
         },
         {
           title: 'Pepper',
           description: 'an opiniated and feature-full renderless component UiKit to bootstrap your UI logic.',
           version: '1.9.5',
           illustration: '/statics/images/logo/pepper.svg',
-          href: 'https://pepper.spices.design'
+          href: 'https://pepper.spices.design',
+          cta: 'Go go go!'
         }
       ]
     }

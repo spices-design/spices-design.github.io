@@ -44,8 +44,14 @@
     background: 0;
 
     @include f(m);
-    @include f(medium);
-    @include f(light60);
+    @include f(light50);
     text-decoration: none;
+    @include ui(pointer);
+
+    &:hover,
+    &:focus{
+      @include f(blue50);
+      text-decoration: none;
+    }
   }
 }

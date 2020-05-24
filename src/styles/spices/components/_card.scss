@@ -1,4 +1,4 @@
-.card{
+a.card{
   $root: '.card';
 
   @include b-block;
@@ -35,7 +35,26 @@
     @include b-absolute;
     top: 10%;
     left: 10%;
+
+    @include td(s);
   } 
+
+  #{$root}__cta{
+    @include b-absolute;
+    @include t(50);
+    @include l(50);
+    transform: translate(-50%, -150%);
+    opacity: 0;
+    
+    @include px(s);
+    @include py(xs);
+    border-radius: 4rem;
+    @include bg(light20);
+
+    @include f(center);
+
+    @include td(s);
+  }
 
   ////////////////////////////////////////////////////
   //
@@ -60,18 +79,32 @@
   }
 
   #{$root}__version{
+    @include b-flex;
+    @include b-flex(baseline);
+
     @include ml(xs);
     @include p(xs);
-    @include shadow(l);
-    @include bg(light10);
     border-radius: 2px;
 
+    @include body2;
     @include f(light50);
+
+    &::before{
+      content: '';
+
+      @include b-block;
+      width: .25rem;
+      height: .25rem;
+      border-radius: 50%;
+      @include bg(light30);
+      @include mr(s);
+      line-height: 0;
+    }
   }
 
   #{$root}__description{
-    @include body1;
-    @include f(light60);
+    @include body2;
+    @include f(light50);
   }
 
   ////////////////////////////////////////////////////
@@ -82,6 +115,17 @@
 
   &:hover,
   &:focus{
+    text-decoration: none;
+
+    #{$root}__illustration{
+      filter: blur(4px);
+    }
+
+    #{$root}__cta{
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+
     #{$root}__header{
       @include bc(blue50);
     }

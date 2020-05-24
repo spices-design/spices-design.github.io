@@ -5,6 +5,7 @@
     
     <header class="card__header">
       <img class="card__illustration" :src="illustration" />
+      <div class="card__cta">{{ cta }}</div>
     </header>
 
     <div class="card__body">
@@ -23,6 +24,11 @@ export default {
   name: 'Card',
 
   props: {
+    cta: {
+      type: String,
+      default: 'Explore'
+    },
+
     description: {
       type: String
     },
