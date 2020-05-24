@@ -1,7 +1,8 @@
+import getCurrentModule from '@/helpers/module'
+
 export default { 
   namespaced: true,
   state: {
-    current: null,
     salt: {
       description: 'A design token specification and toolset to enforce consistency in your application with flexibility at heart.',
       homepage: 'http://salt.spices.local:8080',
@@ -26,7 +27,27 @@ export default {
   },
 
   getters: {
-    modules: state => [state.salt, state.pepper, state.ginger]
+    current: state => {
+      let ret = null;
+      let m = getCurrentModule();
+      switch (m) {
+        case 'salt':
+          ret = state.salt;
+          break;
+        case 'pepper':
+          ret = state.pepper;
+          break;
+        case 'ginger':
+          ret = state.ginger;
+          break;
+      }
+
+      return ret;
+    },
+    modules: state => [state.salt, state.pepper, state.ginger],
+    others: (state, getters) => {
+      return getters.modules.filter( m => m !== getters.current )
+    }
   },
 
   actions: {

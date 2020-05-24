@@ -1,10 +1,12 @@
 .header{
   $root: '.header';
 
+  padding: 2rem 0;
+
   .container{
     @include b-flex;
     @include b-flex(between);
-    @include b-flex(middle);
+    @include b-flex(baseline);
   }
 
   ////////////////////////////////////////////////////
@@ -18,13 +20,29 @@
 
     text-decoration: none;
   }
+
+  #{$root}__title{
+    @include ml(s);
+  }
+
+  #{$root}__logoglyph{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+  }
+
+  #{$root}__logoparent{
+    @include f(m);
+    @include f(medium);
+    @include f(blue90);
+    opacity: .5;
+  }
   
   #{$root}__logotype{
-    @include ml(s);
-
     @include f(xxxl);
-    @include f(blue80);
+    @include f(blue90);
     @include f(medium);
+    line-height: .75;
   }
 
   ////////////////////////////////////////////////////
