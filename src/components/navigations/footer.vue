@@ -5,10 +5,12 @@
         <!-- First -->
         <div class="footer__first">
           <div class="footer__logos">
-            <img
-              class="footer__logo"  
-              src="/statics/images/logo/spices.svg" 
-              alt="Spices Logo">
+            <a href="//spices.local:8080">
+              <img
+                class="footer__logo"  
+                src="/statics/images/logo/spices.svg" 
+                alt="Spices Logo">
+            </a>
 
             <span
               v-if="current" 
@@ -25,7 +27,7 @@
 
         <!-- Second -->
         <div
-          v-if="others" 
+          v-if="others && current" 
           class="footer__second">
           <p class="footer__subtitle">In the same project</p>
           <ul class="footer__modules">
