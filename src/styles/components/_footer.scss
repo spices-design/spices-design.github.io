@@ -6,12 +6,117 @@
   @include f(light50);
 
   #{$root}__body{
-    @include py(xl);
+    .container{
+      @include b-flex;
+    }
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	First
+  //
+  ////////////////////////////////////////////////////
+  
+  #{$root}__first{
+    flex: 1 0 50%;
+    @include py(l);
+  }
+
+  #{$root}__logos{
+    @include b-flex;
+    @include b-flex(middle);
+  }
+
+  #{$root}__logo{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+  }
+
+  #{$root}__plus{
+    @include f(xxl);
+    @include f(bold);
+    @include f(blue90);
   }
 
   #{$root}__copyright{
     max-width: 25rem;
   }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Second
+  //
+  ////////////////////////////////////////////////////
+
+  #{$root}__second{
+    flex: 1 0 50%;
+    @include py(l);
+    @include pl(xl);
+
+    border-left: 1px solid color(light20);
+  }
+
+  #{$root}__subtitle{
+    @include body2;
+    @include f(light90);
+  }
+
+  #{$root}__modules{
+    @include mt(m);
+  }
+
+  #{$root}__module{
+    & + #{$root}__module{
+      @include mt(s);
+      @include pt(s);
+      border-top: 1px solid color(light10);
+    }
+  }
+
+  .module{
+    @include b-flex;
+
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      .module__title{
+        @include f(blue50);
+      }
+
+      .module__description{
+        @include f(light60);
+      }
+    }
+  }
+
+  .module__illustration{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+  }
+
+  .module__title {
+    @include b-block;
+    
+    @include body2;
+    @include f(light80);
+    @include f(medium);
+  }
+  
+  .module__description{
+    @include b-block;
+
+    @include body2;
+    @include f(light40);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Footer
+  //
+  ////////////////////////////////////////////////////
+  
 
   #{$root}__footer{
     @include py(s);

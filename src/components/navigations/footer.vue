@@ -10,6 +10,10 @@
               src="/statics/images/logo/spices.svg" 
               alt="Spices Logo">
 
+            <span
+              v-if="current" 
+              class="footer__plus">+</span>
+
             <img 
               v-if="current"
               class="footer__logo" 
