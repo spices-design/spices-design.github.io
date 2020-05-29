@@ -11,6 +11,9 @@
       <button class="header__cta">Tools</button>
     </nav-header>
 
+    <!-- test -->
+    <test />
+
     <!-- Footer -->
     <nav-footer />
 
@@ -23,12 +26,15 @@ import { mapState } from 'vuex'
 import NavHeader from '@/components/navigations/header'
 import NavFooter from '@/components/navigations/footer'
 
+import Test from './test.md'
+
 export default {
   name: 'SaltHome',
 
   components: {
     NavFooter,
     NavHeader,
+    Test
   },
 
   computed: {

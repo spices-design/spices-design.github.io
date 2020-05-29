@@ -1,0 +1,9 @@
+{
+  "specifications": [
+    {
+      "id": "version",
+      "title": "Version",
+      "description": "Version description"
+    }
+  ]
+}

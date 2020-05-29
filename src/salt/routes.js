@@ -1,3 +1,5 @@
+import Specs from './salt.json'
+
 export default [
   {
     path: '/',
@@ -6,5 +8,11 @@ export default [
     meta: {
       bodyClass: 'view-salt-home'
     }
-  }
+  },
+
+  ...Specs.map( e => ({
+    path: `/${e}`,
+    name: e,
+    component: () => import(`./specs/${e}.md`)
+  }))
 ]
