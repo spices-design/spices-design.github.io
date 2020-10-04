@@ -10,9 +10,9 @@ export default [
     }
   },
 
-  ...Specs.map( e => ({
-    path: `/${e}`,
-    name: e,
-    component: () => import(`./specs/${e}.md`)
-  }))
+  // ...Specs.map( e => ({
+  //   path: `/${e}`,
+  //   name: e,
+  //   component: () => import(`./views/${e}.md`)
+  // }))
 ]
