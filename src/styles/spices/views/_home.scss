@@ -17,8 +17,33 @@
   ////////////////////////////////////////////////////
 
   .modules{
-    margin-top: 4rem;
+    @include bg(primary90);
+    @include pt(xxl);
+    padding-left: calc(100vw / 14 * 2);
+    margin-top: 2rem;
   }  
+
+  .modules__intro{
+    max-width: calc(100vw / 14 * 5);
+  }
+
+  .modules__title{
+    @include heading1;
+    @include f(white);
+  }
+
+  .modules__subtitle{
+    @include heading2;
+    @include f(white);
+    @include f(light);
+    opacity: .4;
+  }
+
+  .modules__description{
+    @include body1;
+    @include f(white);
+    opacity: .5;
+  }
 
   ////////////////////////////////////////////////////
   //

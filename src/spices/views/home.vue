@@ -13,8 +13,14 @@
     <hero />
 
     <!-- Modules -->
-    <div v-if="false" class="container modules">
-      <div class="grid">
+    <div class="modules">
+      <div class="modules__intro">
+        <h2 class="modules__title">Modulate</h2>
+        <h3 class="modules__subtitle">Opt in base only</h3>
+        <p class="modules__description">Spices won’t tell you what you need to do or how to do it. We provide the tool for you to build your own reality. Opt in for as many or as few module as you want.</p>
+      </div>
+
+      <div class="modules__slider">
         <card 
           v-for="m in modules"
           :cta="m.cta"
