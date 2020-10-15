@@ -1,38 +1,35 @@
 <template>
   <header class="header">
-    <!-- TopBar -->
-    <top-bar :color="color" />
+    <!-- First -->
+    <router-link class="header__first" :to="{ name: baseHref }">
+      <img 
+        class="header__logoglyph"
+        :src="logo" 
+        :alt="altLogo" />
 
-    <!-- Content -->
-    <div class="container">
-      <router-link class="header__first" :to="{ name: baseHref }">
-        <img 
-          class="header__logoglyph"
-          :src="logo" 
-          :alt="altLogo" />
-
-        <div class="header__title">
-          <div class="header__logoparent" v-if="child">spices</div>
-          <div class="header__logotype">{{ title }}</div>
-        </div>
-      </router-link>
-
-      <div class="header__second">
-        <slot></slot>
+      <div class="header__title">
+        <div class="header__logoparent" v-if="child">spices</div>
+        <div class="header__logotype">{{ title }}</div>
       </div>
+    </router-link>
+
+    <!-- Second -->
+    <div class="header__second">
+      <button class="header__burger">
+        <div class="header__burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
     </div>
   </header>
 </template>
 
 <script>
-import TopBar from '@/components/topbar'
 
 export default {
   name: 'NavHeader',
-
-  components: {
-    TopBar
-  },
 
   props: {
 

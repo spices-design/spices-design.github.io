@@ -4,9 +4,9 @@ import VueBodyClass from 'vue-body-class'
 
 import getCurrentModule from '@/helpers/module'
 
-import PepperRoutes from '@/pepper/routes'
+// import PepperRoutes from '@/pepper/routes'
 import SpicesRoutes from '@/spices/routes'
-import SaltRoutes from '@/salt/routes'
+// import SaltRoutes from '@/salt/routes'
 
 //////////////////////////////////////////////////////////////////
 // Domain setup
@@ -14,12 +14,12 @@ import SaltRoutes from '@/salt/routes'
 const current = getCurrentModule();
 let domainRoutes;
 switch(current){
-  case 'salt':
-    domainRoutes = SaltRoutes;
-    break;
-  case 'pepper':
-    domainRoutes = PepperRoutes;
-    break;
+  // case 'salt':
+  //   domainRoutes = SaltRoutes;
+  //   break;
+  // case 'pepper':
+  //   domainRoutes = PepperRoutes;
+  //   break;
   default:
     domainRoutes = SpicesRoutes;
     break;

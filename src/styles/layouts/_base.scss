@@ -3,7 +3,7 @@ body {
   @include width(100);
   @include bg(white);
 
-  @extend .ui-border;
+  @extend %ui-border;
 
   -webkit-overflow-scrolling: touch;
 }
@@ -27,7 +27,7 @@ body {
 *,
 *::before,
 *::after {
-  @extend .ui-border;
+  @extend %ui-border;
 }
 
 ::selection {

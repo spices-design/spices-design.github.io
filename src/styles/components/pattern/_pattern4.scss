@@ -3,8 +3,11 @@
 //           Pattern 4 :: Strike
 //
 ////////////////////////////////////////////////////
-.p4
+.pattern-item.-pattern4
 {
+  $timing: 10s;
+  $width: 4rem;
+
   @include bgattr('first');
   @include bgattr('second', '&::before');
 

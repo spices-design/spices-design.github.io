@@ -2,6 +2,7 @@
   @include b-fixed;
   @include t(0);
   @include l(0);
+  @include z(toolbar);
   @include width(100);
   height: 4px;
 
@@ -18,12 +19,12 @@
   }
   
   &::before{
-    width: calc(100% / 14 * 13);
+    width: calc(100% / 14 * 8);
     border-radius: 4px;
   }
   
   &::after{
-    width: calc(100% / 14 * 8);
+    width: calc(100% / 14 * 4);
   }
   
   ////////////////////////////////////////////////////

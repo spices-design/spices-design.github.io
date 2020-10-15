@@ -9,12 +9,22 @@
 //
 ////////////////////////////////////////////////////
 
-@import "../components/footer";
-@import "../components/pattern/grid";
+@import "../components/navigations/header";
+@import "../components/navigations/footer";
+
+@import "../components/pattern/bgattr";
+@import "../components/pattern/item";
+@import "../components/pattern/line";
+@import "../components/pattern/pattern1";
+@import "../components/pattern/pattern2";
+@import "../components/pattern/pattern3";
+@import "../components/pattern/pattern4";
+
+
+
 @import "../components/topbar";
 
 @import "./components/card";
-@import "./components/header";
 @import "./components/hero";
 
 @import "./views/home";

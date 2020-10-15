@@ -3,8 +3,11 @@
 //           Pattern 2 :: Squared
 //
 ////////////////////////////////////////////////////
-.p2
+.pattern-item.-pattern2
 {
+  $timing: 10s;
+  $width: 4rem;
+
   @include bgattr('first');
   @include bgattr('second', '&::before');
   @include bgattr('first', '&::after');

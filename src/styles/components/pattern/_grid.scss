@@ -6,27 +6,6 @@
 
   pointer-events: none;
 
-  @mixin bgattr($attr, $selector:null)
-  {
-    @each $key, $color in $c-colors
-    {
-      &[#{$attr}="#{'' + $key}"]
-      {
-        @if $selector
-        {
-          #{$selector}
-          {
-            background: $color;
-          }
-        }
-        @else
-        {
-          background: $color;
-        }
-      }
-    }
-  }
-
   .invisible
   {
     visibility: hidden;
@@ -107,40 +86,11 @@
       }
       $i: $i - 1;
     }
-  }
-
-  ////////////////////////////////////////////////////
-  //
-  //	Patterns
-  //
-  ////////////////////////////////////////////////////
-
-  @import './pattern1';
-  @import './pattern2';
-  @import './pattern3';
-  @import './pattern4';
+  }  
 
   ////////////////////////////////////////////////////
   //
   //  Appearance
   //
   ////////////////////////////////////////////////////
-
-  .-transitionin
-  {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  @keyframes transitionin
-  {
-    0%
-    {
-      transform: translateX(-100%);
-    }
-    100%
-    {
-      transform: translateX(0);
-    }
-  }
 }

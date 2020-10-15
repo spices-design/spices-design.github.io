@@ -1,0 +1,20 @@
+@mixin bgattr($attr, $selector:null)
+{
+  @each $key, $color in $c-colors
+  {
+    &[#{$attr}="#{'' + $key}"]
+    {
+      @if $selector
+      {
+        #{$selector}
+        {
+          background: $color;
+        }
+      }
+      @else
+      {
+        background: $color;
+      }
+    }
+  }
+}

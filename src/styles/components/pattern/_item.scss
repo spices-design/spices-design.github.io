@@ -1,0 +1,95 @@
+.pattern-item{
+  $root: '.pattern-item';
+  $timing: 10s;
+  $width: 4rem;
+
+  display: inline-block;
+  width: $width;
+  height: $width;
+  overflow: hidden;
+
+  @include b-absolute;
+  // opacity: 0;
+  transform: translateX(-10%);
+  transition: opacity .5s, transform .5s;
+
+  $i: 10;
+  @while $i > 0
+  {
+    $stag: 50 * $i;
+    &:nth-child(#{$i})
+    {
+      transition-delay: #{$stag}ms;
+      animation-delay: #{$stag}ms;
+      &::before,
+      &::after
+      {
+        transition-delay: #{$stag}ms;
+        animation-delay: #{$stag}ms;
+      }
+
+      @include media('<l')
+      {
+        @if ($i % 4) == 0
+        {
+          display: none;
+        }
+      }
+
+      @include media('<m')
+      {
+        @if ($i % 2) == 0
+        {
+          display: none;
+        }
+      }
+
+      @include media('<s')
+      {
+        @if ($i == 1)
+        {
+          display: none;
+        }
+      }
+    }
+    $i: $i - 1;
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Indexes
+  //
+  ////////////////////////////////////////////////////
+  $i: 10;
+  @while $i > 0
+  {
+    &.-index-#{$i}{
+      top: $i * $width;
+    }
+    $i: $i - 1;
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Transitions
+  //
+  ////////////////////////////////////////////////////
+
+  .-transitionin
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @keyframes transitionin
+  {
+    0%
+    {
+      transform: translateX(-100%);
+    }
+    100%
+    {
+      transform: translateX(0);
+    }
+  }
+}

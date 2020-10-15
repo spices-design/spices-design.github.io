@@ -1,0 +1,114 @@
+.header{
+  $root: '.header';
+
+  @include b-fixed;
+  @include t(m);
+  @include l(50);
+  @include z(toolbar);
+  transform: translateX(-50%);
+
+  @include b-flex;
+  @include b-flex(between);
+  @include b-flex(middle);
+  @include mx(auto);
+  @include px(l);
+  @include py(s);
+  
+  max-width: 25rem;
+  @include bg(light10);
+  border-radius: 50rem;
+
+  & > * + * {
+    @include ml(m);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	First
+  //
+  ////////////////////////////////////////////////////
+  #{$root}__first{
+    @include b-flex;
+    @include b-flex(middle);
+
+    text-decoration: none;
+  }
+
+  #{$root}__title{
+    @include ml(s);
+  }
+
+  #{$root}__logoglyph{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+  }
+
+  #{$root}__logoparent{
+    @include f(m);
+    @include f(medium);
+    @include f(blue90);
+    opacity: .5;
+  }
+  
+  #{$root}__logotype{
+    @include f(xxl);
+    @include f(blue90);
+    @include f(medium);
+    line-height: .75;
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Second
+  //
+  ////////////////////////////////////////////////////
+
+  #{$root}__burger{
+    @include b-flex;
+    @include b-flex(middle);
+    @include b-flex(center);
+
+    border: 0;
+    background: 0;
+
+    @include f(m);
+    @include f(light50);
+    @include f(right);
+    text-decoration: none;
+    @include ui(pointer);
+
+    & > * + * {
+      @include ml(s);
+    }
+
+    &:hover,
+    &:focus{
+      @include f(primary50);
+      text-decoration: none;
+    }
+  }
+
+  #{$root}__burger-icon{
+    span{
+      @include b-block;
+      width: 1.5rem;
+      height: 2px;
+      @include ml(auto);
+
+      @include bg(light50);
+
+      & + span{
+        @include mt(xs);
+      }
+
+      &:first-child{
+        width: .75rem
+      }
+
+      &:nth-child(2){
+        width: 1.15rem;
+      }
+    }
+  }
+}

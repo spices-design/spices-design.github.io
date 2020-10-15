@@ -3,8 +3,11 @@
 //           Pattern 1 :: Hamburger
 //
 ////////////////////////////////////////////////////
-.p1
+.pattern-item.-pattern1
 {
+  $timing: 10s;
+  $width: 4rem;
+
   @include bgattr('first');
   @include bgattr('second', '&::before, &::after');
 

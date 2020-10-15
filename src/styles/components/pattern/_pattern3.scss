@@ -3,8 +3,12 @@
 //           Pattern 3 :: Tile
 //
 ////////////////////////////////////////////////////
-.p3
+$width: 4rem;
+$timing: 10s;
+
+.pattern-item.-pattern3
 {
+
   @include bgattr('first');
   @include bgattr('second', '&::before, &::after');
 
