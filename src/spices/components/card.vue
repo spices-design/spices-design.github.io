@@ -1,7 +1,7 @@
 <template>
-  <a
+  <router-link
     :class="classes"
-    :href="href">
+    :to="{ name: href }">
     
     <header class="card__header">
       <img class="card__illustration" :src="illustration" />
@@ -17,7 +17,7 @@
       <div class="card__cta">{{ cta }}</div>
       <div class="card__version">v{{ version }}</div>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>

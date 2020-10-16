@@ -6,7 +6,7 @@ export default {
     salt: {
       color: 'blue',
       description: 'A design token specification and toolset to enforce consistency in your application with flexibility at heart.',
-      homepage: 'http://salt.spices.local:8080',
+      homepage: 'salt.home',
       logo: {
         dark: '/statics/images/logo/salt.svg',
         light: '/statics/images/logo/salt-light.svg',
@@ -18,7 +18,7 @@ export default {
     pepper: {
       color: 'red',
       description: 'A minimalist ESM module loader and handler. Allows you to create distributed web application.',
-      homepage: 'http://pepper.spices.local:8080',
+      homepage: 'pepper.home',
       logo: {
         dark: '/statics/images/logo/pepper.svg',
         light: '/statics/images/logo/pepper-light.svg',
@@ -30,7 +30,7 @@ export default {
     ginger: {
       color: 'yellow',
       description: 'A minimalist ESM module loader and handler. Allows you to create distributed web application.',
-      homepage: 'http://ginger.spices.local:8080',
+      homepage: 'ginger.home',
       logo: {
         dark: '/statics/images/logo/ginger.svg',
         light: '/statics/images/logo/ginger-light.svg',
@@ -42,7 +42,7 @@ export default {
     basil: {
       color: 'green',
       description: 'A minimalist ESM module loader and handler. Allows you to create distributed web application.',
-      homepage: 'http://ginger.spices.local:8080',
+      homepage: 'basil.home',
       logo: {
         dark: '/statics/images/logo/ginger.svg',
         light: '/statics/images/logo/ginger-light.svg',
