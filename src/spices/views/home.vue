@@ -21,16 +21,19 @@
       </div>
 
       <div class="modules__slider">
-        <card 
-          v-for="m in modules"
-          :cta="m.cta"
-          :description="m.description"
-          :href="m.homepage"
-          :key="m.name"
-          :illustration="m.logo"
-          :title="m.name"
-          :version="m.version"
-          />
+        <div class="modules__slider-inner">
+          <card 
+            v-for="m in modules"
+            :cta="m.cta"
+            :description="m.description"
+            :href="m.homepage"
+            :key="m.package"
+            :illustration="m.logo.light"
+            :theme="m.color"
+            :title="m.package"
+            :version="m.version"
+            />
+        </div>
       </div>
     </div>
 

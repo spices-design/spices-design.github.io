@@ -4,24 +4,51 @@ export default {
   namespaced: true,
   state: {
     salt: {
+      color: 'blue',
       description: 'A design token specification and toolset to enforce consistency in your application with flexibility at heart.',
       homepage: 'http://salt.spices.local:8080',
-      logo: '/statics/images/logo/salt.svg',
+      logo: {
+        dark: '/statics/images/logo/salt.svg',
+        light: '/statics/images/logo/salt-light.svg',
+      },
       name: 'salt',
+      package: '@spices/salt',
       version: '3.1.18',
     },
     pepper: {
+      color: 'red',
       description: 'A minimalist ESM module loader and handler. Allows you to create distributed web application.',
       homepage: 'http://pepper.spices.local:8080',
-      logo: '/statics/images/logo/pepper.svg',
+      logo: {
+        dark: '/statics/images/logo/pepper.svg',
+        light: '/statics/images/logo/pepper-light.svg',
+      },
       name: 'pepper',
+      package: '@spices/pepper',
       version: '1.9.5',
     },
     ginger: {
+      color: 'yellow',
       description: 'A minimalist ESM module loader and handler. Allows you to create distributed web application.',
       homepage: 'http://ginger.spices.local:8080',
-      logo: '/statics/images/logo/ginger.svg',
+      logo: {
+        dark: '/statics/images/logo/ginger.svg',
+        light: '/statics/images/logo/ginger-light.svg',
+      },
       name: 'ginger',
+      package: '@spices/ginger',
+      version: '0.1.35',
+    },
+    basil: {
+      color: 'green',
+      description: 'A minimalist ESM module loader and handler. Allows you to create distributed web application.',
+      homepage: 'http://ginger.spices.local:8080',
+      logo: {
+        dark: '/statics/images/logo/ginger.svg',
+        light: '/statics/images/logo/ginger-light.svg',
+      },
+      name: 'basil',
+      package: '@spices/basil',
       version: '0.1.35',
     },
   },
@@ -44,7 +71,7 @@ export default {
 
       return ret;
     },
-    modules: state => [state.salt, state.pepper, state.ginger],
+    modules: state => [state.salt, state.pepper, state.ginger, state.basil],
     others: (state, getters) => {
       return getters.modules.filter( m => m !== getters.current )
     }

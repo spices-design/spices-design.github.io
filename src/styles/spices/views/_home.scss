@@ -19,12 +19,21 @@
   .modules{
     @include bg(primary90);
     @include pt(xxl);
-    padding-left: calc(100vw / 14 * 2);
     margin-top: 2rem;
   }  
 
   .modules__intro{
-    max-width: calc(100vw / 14 * 5);
+    padding-left: calc(100vw / 14 * 1);
+    padding-right: calc(100vw / 14 * 1);
+    
+    @include media('>m'){
+      padding-left: calc(100vw / 14 * 2);
+      padding-right: calc(100vw / 14 * 2);
+    }
+    
+    @include media('>l'){
+      max-width: calc(100vw / 14 * 5);
+    }
   }
 
   .modules__title{
@@ -35,14 +44,48 @@
   .modules__subtitle{
     @include heading2;
     @include f(white);
-    @include f(light);
+    font-weight: 200;
     opacity: .4;
   }
 
   .modules__description{
+    @include mt(m);
+
     @include body1;
     @include f(white);
     opacity: .5;
+  }
+
+  .modules__slider{
+    width: 100%;
+    overflow: auto;
+
+    @include b-relative;
+    top: 2rem;
+  }
+
+  .modules__slider-inner{
+    @include b-flex;
+    padding-left: calc(100vw / 14 * 1);
+    
+    & > * + *{
+      @include ml(m);
+    }
+    
+    &::after{
+      content: '';
+      
+      @include b-block;
+      min-width: calc(100vw / 14 * 1);
+    }
+    
+    @include media('>m'){
+      padding-left: calc(100vw / 14 * 2);
+      
+      &::after{
+        min-width: calc(100vw / 14 * 2);
+      }
+    }
   }
 
   ////////////////////////////////////////////////////

@@ -1,7 +1,11 @@
 a.card{
   $root: '.card';
 
-  @include b-block;
+  @include b-flex;
+  @include b-flex(column);
+  @include bg(primary80);
+  border-radius: 4px;
+  min-width: 17rem;
 
   text-decoration: none;
   @include f(light90);
@@ -16,15 +20,46 @@ a.card{
     @include b-flex(middle);
     @include b-flex(center);
 
-    border: 2px solid $light20;
-    @include bg(blue00);
-    border-radius: 4px;
-
     height: 0;
     padding-top: 56.25%;
     @include b-relative;
 
+    overflow: hidden;
+
     @include td(s);
+
+    &::before{
+      content: '';
+
+      @include b-block;
+      @include width(100);
+      height: 0;
+      padding-bottom: 100%;
+      border-radius: 100%;
+      @include bg(primary90);
+      opacity: .2;
+
+      @include b-absolute;
+      @include b(0);
+      @include l(0);
+    }
+
+    #{$root}__cta{
+      @include b-absolute;
+      @include t(50);
+      @include l(50);
+      transform: translate(-50%, -150%);
+      opacity: 0;
+      
+      @include px(s);
+      @include py(xs);
+      border-radius: 4rem;
+      @include bg(light20);
+
+      @include f(center);
+
+      @include td(s);
+    }
   }
 
   #{$root}__illustration{
@@ -39,23 +74,6 @@ a.card{
     @include td(s);
   } 
 
-  #{$root}__cta{
-    @include b-absolute;
-    @include t(50);
-    @include l(50);
-    transform: translate(-50%, -150%);
-    opacity: 0;
-    
-    @include px(s);
-    @include py(xs);
-    border-radius: 4rem;
-    @include bg(light20);
-
-    @include f(center);
-
-    @include td(s);
-  }
-
   ////////////////////////////////////////////////////
   //
   //	Body
@@ -63,47 +81,58 @@ a.card{
   ////////////////////////////////////////////////////
 
   #{$root}__body{
+    @include b-flex(1);
     @include mt(m);
-    width: 80%;
-    max-width: 20rem;
-  }
-
-  #{$root}__group{
-    @include b-flex;
-    @include b-flex(baseline);
+    @include p(l);
   }
 
   #{$root}__title{
-    @include f(medium);
-    @include f(l);
+    @include heading3;
+    @include f(white);
   }
 
-  #{$root}__version{
+  #{$root}__description{
+    @include mt(xs);
+    @include body1;
+    @include f(light40);
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Footer
+  //
+  ////////////////////////////////////////////////////
+  #{$root}__footer{
     @include b-flex;
     @include b-flex(baseline);
+    @include b-flex(between);
+    @include px(l);
+    @include pb(l);
 
-    @include ml(xs);
-    @include p(xs);
-    border-radius: 2px;
-
-    @include body2;
-    @include f(light50);
-
+    @include b-relative;
+    
     &::before{
       content: '';
 
       @include b-block;
-      width: .25rem;
-      height: .25rem;
-      border-radius: 50%;
-      @include bg(light30);
-      @include mr(s);
-      line-height: 0;
+      width: calc(100% - 3rem);
+      height: 4px;
+      @include mx(auto);
+      @include bg(light20);
+      border-radius: 4px 4px 0 0;
+
+      @include b-absolute;
+      @include b(0);
+    }
+
+    #{$root}__cta{
+      @include body1;
+      @include f(white);
     }
   }
 
-  #{$root}__description{
-    @include body2;
+  #{$root}__version{
+    @include body1;
     @include f(light50);
   }
 
@@ -121,17 +150,70 @@ a.card{
       filter: blur(4px);
     }
 
-    #{$root}__cta{
-      transform: translate(-50%, -50%);
-      opacity: 1;
-    }
-
     #{$root}__header{
       @include bc(blue50);
+
+      #{$root}__cta{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
     }
 
     #{$root}__title{
       @include f(blue50);
+    }
+  }
+
+  ////////////////////////////////////////////////////
+  //
+  //	Theme
+  //
+  ////////////////////////////////////////////////////
+  &.-theme-blue{
+    #{$root}__footer{
+      &::before{
+        @include bg(primary50);
+      }
+    }
+  }
+
+  &.-theme-red{
+    #{$root}__footer{
+      &::before{
+        @include bg(red50);
+      }
+    }
+  }
+  
+  &.-theme-yellow{
+    #{$root}__footer{
+      &::before{
+        @include bg(yellow50);
+      }
+    }
+  }
+  
+  &.-theme-orange{
+    #{$root}__footer{
+      &::before{
+        @include bg(orange50);
+      }
+    }
+  }
+  
+  &.-theme-green{
+    #{$root}__footer{
+      &::before{
+        @include bg(green50);
+      }
+    }
+  }
+  
+  &.-theme-teal{
+    #{$root}__footer{
+      &::before{
+        @include bg(teal50);
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <a
-    class="card"
+    :class="classes"
     :href="href">
     
     <header class="card__header">
@@ -9,12 +9,13 @@
     </header>
 
     <div class="card__body">
-      <div class="card__group">
-        <div class="card__title">{{ title }}</div>
-        <div class="card__version">v{{ version }}</div>
-      </div>
-
+      <div class="card__title">{{ title }}</div>
       <div class="card__description">{{ description }}</div>
+    </div>
+
+    <div class="card__footer">
+      <div class="card__cta">{{ cta }}</div>
+      <div class="card__version">v{{ version }}</div>
     </div>
   </a>
 </template>
@@ -41,12 +42,25 @@ export default {
       type: String
     },
 
+    theme: {
+      type: String,
+    },
+
     title: {
       type: String
     },
 
     version: {
       type: String
+    }
+  },
+
+  computed: {
+    classes(){
+      return {
+        'card': true,
+        ['-theme-' + this.theme]: true
+      }
     }
   }
 }
