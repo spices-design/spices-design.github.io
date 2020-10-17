@@ -17,9 +17,17 @@
   max-width: 25rem;
   @include bg(light10);
   border-radius: 50rem;
+  opacity: .8;
+
+  @include td(m);
 
   & > * + * {
     @include ml(m);
+  }
+
+  &:hover,
+  &:focus-within{
+    opacity: 1;
   }
 
   ////////////////////////////////////////////////////

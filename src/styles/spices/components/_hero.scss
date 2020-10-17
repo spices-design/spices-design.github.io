@@ -35,6 +35,16 @@
   #{$root}__description{
     @include body1;
     opacity: .6;
+
+    a{
+      @include f(light90);
+      font-weight: 600;
+    }
+  }
+
+  #{$root}__note{
+    @include body2;
+    @include f(light40);
   }
 
   ////////////////////////////////////////////////////

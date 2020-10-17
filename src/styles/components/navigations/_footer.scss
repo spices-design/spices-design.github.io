@@ -6,8 +6,11 @@
   @include f(light50);
 
   #{$root}__body{
-    .container{
-      @include b-flex;
+    padding: 0 calc(100vw / 14 * 1);
+    @include b-flex;
+    
+    @include media('>m'){
+      padding: 0 calc(100vw / 14 * 2);
     }
   }
 
@@ -120,6 +123,13 @@
 
   #{$root}__footer{
     @include py(s);
+    padding-left: calc(100vw / 14 * 1);
+    padding-right: calc(100vw / 14 * 1);
     @include bg(light10);
+    
+    @include media('>m'){
+      padding-left: calc(100vw / 14 * 2);
+      padding-right: calc(100vw / 14 * 2);
+    }
   }
 }
