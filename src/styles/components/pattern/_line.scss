@@ -9,13 +9,12 @@
     content: '';
 
     @include b-block;
-    width: 2px;
+    border-left: 2px dashed color(light20);
     height: 100%;
 
     @include b-absolute;
     left: calc(#{$width} / 2 - 4px);
     @include t(0);
-    @include bg(light20);
   }
 
   &.-height-1{

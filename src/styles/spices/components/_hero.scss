@@ -3,7 +3,7 @@
 
   @include b-relative;
   padding-top: 10rem;
-  height: 4rem * 9;
+  min-height: 4rem * 9;
 
   ////////////////////////////////////////////////////
   //
@@ -13,14 +13,18 @@
 
   #{$root}__content{
     @include f(light90);
-    padding-left: calc(100vw / 14 * 2);
-
+    padding-left: calc(100vw / 14 * 1);
+    width: calc(100vw / 14 * 12);
+    @include b-relative;
+    @include z(2);
+    
     & > * + * {
       @include mt(m);
     }
-
-    @include media('>m'){
-      width: calc(100% / 12 * 6);
+    
+    @include media('>s'){
+      padding-left: calc(100vw / 14 * 2);
+      width: calc(100% / 12 * 8);
     }
 
     @include media('>l'){
@@ -56,32 +60,57 @@
     @include b-absolute;
     @include t(0);
     @include l(0);
-    
+    @include z(1);
   }
 
   .pattern-line{
     $width: 4rem;
 
     &:nth-child(1){
-      left: calc(100vw / 14 * 1)
+      left: calc(100vw / 14 * 1);
+      display: none;
+  
+      @include media('>m'){
+        display: block;
+      }
     }
     &:nth-child(2){
-      left: calc(100vw / 14 * 2)
+      left: calc(100vw / 14 * 2);
+      display: none;
+
+      @include media('>m'){
+        display: block;
+      }
     }
     &:nth-child(3){
-      left: calc(100vw / 14 * 9)
+      left: calc(100vw / 14 * 9);
+      display: none;
+
+      @include media('>l'){
+        display: block;
+      }
     }
     &:nth-child(4){
-      left: calc(100vw / 14 * 10)
+      left: calc(100vw / 14 * 10);
     }
     &:nth-child(5){
-      left: calc(100vw / 14 * 11)
+      left: calc(100vw / 14 * 11);
+      display: none;
+
+      @include media('>l'){
+        display: block;
+      }
     }
     &:nth-child(6){
-      left: calc(100vw / 14 * 12)
+      left: calc(100vw / 14 * 12);
     }
     &:nth-child(7){
-      left: calc(100vw / 14 * 14)
+      left: calc(100vw / 14 * 14);
+      display: none;
+
+      @include media('>l'){
+        display: block;
+      }
     }
   }
 }
