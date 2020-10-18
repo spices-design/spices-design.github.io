@@ -4,7 +4,7 @@
       <h1 class="hero__title">A VueJS ecosystem for design system at work. It helps create modern distributed applications with all the pieces tied together.</h1>
       <p class="hero__description">From specifying your design token to creating a custom UI kit dedicated to your need, Spices enforce consistency while promoting flexibility, all is yours to customize. </p>
       <p class="hero__description">A project by <a href="https://alexandremasy.com" target="_blank">Alexandre Masy</a></p>
-      <p class="hero__note">PS: I’m not selling anything, I built this for my own usage.</p>
+      <p class="hero__note">PS: I’m not selling anything, I built this for my team and my personnal usage.</p>
     </div>
 
     <div class="hero__pattern">
