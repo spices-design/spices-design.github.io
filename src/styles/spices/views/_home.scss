@@ -37,15 +37,14 @@
   }
 
   .modules__title{
-    @include heading1;
+    @include body1;
     @include f(white);
+    opacity: .5;
   }
 
   .modules__subtitle{
-    @include heading2;
+    @include heading1;
     @include f(white);
-    font-weight: 200;
-    opacity: .4;
   }
 
   .modules__description{
@@ -105,7 +104,8 @@
   .values__intro{
     padding-left: calc(100vw / 14 * 1);
     padding-right: calc(100vw / 14 * 1);
-    border-right: 1px dashed color(light20);
+    min-width: 50%;
+    max-width: 25rem;
 
     @include media('>m'){
       padding-left: calc(100vw / 14 * 2);
@@ -119,34 +119,51 @@
   }
 
   .values__title{
-    @include heading1;
-    @include f(light80);
-  }
-
-  .values__subtitle{
-    @include heading2;
-    @include f(light80);
-    font-weight: 200;
-    opacity: .3;
-  }
-
-  .values__description{
-    @include mt(m);
-
     @include body1;
     @include f(light80);
     opacity: .5;
   }
 
-  .values__items{
+  .values__subtitle{
+    @include heading1;
+    @include f(light80);
+  }
 
+  .values__items{
+    counter-reset: values;
   }
 
   .values__item{
-    padding: calc(100vw / 14 * 1);
+    padding-right: calc(100vw / 14 * 1);
+    @include py(xxl);
+  }
 
-    & + .values__item{
-      border-top: 1px dashed color(light20);
+  .values__value{
+    @include b-flex;
+    @include b-flex(baseline);
+
+    @include f(xxl);
+    @include f(medium);
+    @include f(light90);
+    line-height: 1.25;
+
+    &::before{
+      counter-increment: values;
+      content: "0"counter(values);
+      @include mr(m);
+
+      @include body1;
+      @include f(light40);
+      font-weight: 300;
     }
+  }
+
+  .values__description{
+    @include mt(xxs);
+    padding-left: 2.25rem;
+
+    @include f(xxl);
+    @include f(light50);
+    font-weight: 400;
   }
 }

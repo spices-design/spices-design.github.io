@@ -42,25 +42,25 @@
       <div class="values__intro">
         <div class="values__intro-inner">
           <h2 class="values__title">Values</h2>
-          <h3 class="values__subtitle">Stand for ideas. <br> we have big ones</h3>
+          <h3 class="values__subtitle">Stand for ideas. <br> And we have big ones.</h3>
         </div>
       </div>
 
       <div class="values__items">
         <article class="values__item">
-          <div class="values__title">Universality</div>
+          <div class="values__value">Universality</div>
           <div class="values__description">It is the core of the World Wide Web, our solution should embrace it and build systems that are available to, and accessible by, everyone;</div>
         </article>
         <article class="values__item">
-          <div class="values__title">Performance</div>
+          <div class="values__value">Performance</div>
           <div class="values__description">We strive towards making our solutions as fast as possible in terms of both network footprint and the time it takes to become interactive.</div>
         </article>
         <article class="values__item">
-          <div class="values__title">Modularity</div>
+          <div class="values__value">Modularity</div>
           <div class="values__description">Reduce the complexity and improve our system’s reusability by breaking it into small and easy to consume parts.</div>
         </article>
         <article class="values__item">
-          <div class="values__title">Consistency</div>
+          <div class="values__value">Consistency</div>
           <div class="values__description">From consistency comes clarity thus making our system more predictable and efficient to use. Users shouldn’t have to wonder whether different actions or terminology mean the same things.</div>
         </article>
       </div>
