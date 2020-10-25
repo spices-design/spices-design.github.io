@@ -1,7 +1,7 @@
 <template>
   <main>
     <!-- TopBar -->
-    <top-bar />
+    <top-bar color="red" />
     
     <!-- header -->
     <nav-header 
@@ -10,7 +10,7 @@
       title="pepper" />
 
     <!-- Hero -->
-    <!-- <hero /> -->
+    <hero />
 
     <!-- Footer -->
     <nav-footer />
@@ -23,6 +23,7 @@ import { mapGetters } from 'vuex'
 import NavFooter from '@/components/navigations/footer'
 import NavHeader from '@/components/navigations/header'
 import TopBar from '@/components/topbar'
+import Hero from '@/pepper/components/hero'
 
 export default {
   name: 'PepperHome',
@@ -30,7 +31,8 @@ export default {
   components: {
     NavFooter,
     NavHeader,
-    TopBar
+    TopBar,
+    Hero
   },
 
   computed: {
