@@ -16,7 +16,7 @@
       </pattern-line>
 
       <pattern-line :height="7">
-        <pattern-item color="oarange" pattern="3" :index="7" />
+        <pattern-item color="orange" pattern="3" :index="7" />
       </pattern-line>
 
       <pattern-line :height="3">

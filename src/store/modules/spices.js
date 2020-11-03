@@ -2,6 +2,7 @@ import getCurrentModule from '@/helpers/module'
 
 export default { 
   namespaced: true,
+  
   state: {
     salt: {
       color: 'blue',
