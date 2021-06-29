@@ -1271,13 +1271,6 @@
   dependencies:
     "@spices/clove" "^0.0.18"
 
-"@pepper/themes-spices@^2.0.1":
-  version "2.0.1"
-  resolved "https://npm.infinity-commerce.io:443/@pepper%2fthemes-spices/-/themes-spices-2.0.1.tgz#0b169cb872a0e46d36cf3651d2ed56675651c8e3"
-  integrity sha512-3zhQSKKhZ4RDQ8Y9Ti+KYlnxE6zopldXNgVzHHdHKLesM6F6pzA4LtFKa80YbLUpuCHCy9NSPS1exCDQiU8kJQ==
-  dependencies:
-    "@pepper/themes-abc" "^2.0.1"
-
 "@pepper/transitions-fade@^1.11.0":
   version "1.11.0"
   resolved "https://npm.infinity-commerce.io:443/@pepper%2ftransitions-fade/-/transitions-fade-1.11.0.tgz#a908bf583274a9b27ebf580bb60e588d24512105"
