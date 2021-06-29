@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////
+//
+//	Typography styles
+//
+////////////////////////////////////////////////////
+@mixin heading1{
+  @include f(xxl);
+  @include f(regular);
+  line-height: 1.5;
+}
+
+@mixin heading2{
+  @include f(xl);
+  @include f(regular);
+  line-height: 1.5;
+}
+
+@mixin heading3{
+  @include f(l);
+  @include f(regular);
+  line-height: 1.5;
+}
+
+@mixin body1{
+  @include f(m);
+  @include f(regular);
+  line-height: 1.5;
+}
+
+@mixin body2{
+  @include f(s);
+  @include f(regular);
+  line-height: 1.5;
+}
+
+@mixin body3 {
+  @include f(xs);
+  @include f(regular);
+  line-height: 1.5;
+}
+
+@mixin code1 {
+  @include f(s);
+  @include f(code);
+  line-height: 1.5;
+}
+
+@mixin code2 {
+  @include f(xs);
+  @include f(code);
+  line-height: 1.5;
+}
+

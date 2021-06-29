@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////
+//
+//              Typefaces
+//
+////////////////////////////////////////////////////
+
+$f-body: 'Work Sans';
+
+$f-faces: (
+  body: (
+    family: $f-body,
+    type: google,
+    weights: (
+      300,
+      400,
+      500
+    )
+  ),
+
+  code: (
+    family: $f-code,
+    type: google,
+    weigths: (
+      400
+    )
+  ),
+
+  icon: (
+    family: $f-icon,
+    type: custom,
+    root: $f-icon-root,
+    weights: (
+      400: $f-icon
+    )
+  )
+);

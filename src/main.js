@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import Styles from '@/styles/spices/index.scss'
+import Styles from '@/styles/app.scss'
 
 Vue.config.productionTip = false
 
